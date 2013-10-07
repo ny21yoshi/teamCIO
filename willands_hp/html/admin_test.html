@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>HP新着情報管理画面（テスト）</title>
+	</head>
+
+	<body>
+		<h1>新着情報管理画面</h1>
+		<p>コチラからホームページへの新着情報投稿や、投稿した情報の削除等を管理していただけます。</p>
+		<form action="../php/db_input.php" method="POST">
+			<table>
+				<tr>
+					<td>新着情報をこちらへご入力ください。</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<textarea rows="10" cols="50" name="comment">新着情報を入力してください。</textarea>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input type="text" name="link_url">
+					</td>
+				</tr>
+				<tr>
+					<td><input type="reset" value="入力リセット"></td>
+					<td><input type="submit" value="投稿確認"></td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>
